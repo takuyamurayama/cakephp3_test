@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -110,4 +111,16 @@ class ArticlesController extends AppController
 
 		return $this->redirect(['action' => 'index']);
 	}
+=======
+
+namespace App\Controller;
+
+class ArticlesController extends AppController
+{
+    public function index(){
+        $this->loasComponent('Paginater');
+        $articles = $this->Paginator->paginate($this->Articles->find());
+        $this->set(compact('articles'));
+    }
+>>>>>>> origin/master
 }

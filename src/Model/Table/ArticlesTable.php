@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace App\Model\Table;
 
 use Cake\ORM\Query;
@@ -55,4 +56,17 @@ class ArticlesTable extends Table
 
 		return $validator;
 	}
+=======
+// src/Model/Table/ArticlesTable.php
+namespace App\Model\Table;
+
+use Cake\ORM\Table;
+
+class ArticlesTable extends Table
+{
+    public function initialize(array $config)
+    {
+        $this->addBehavior('Timestamp');
+    }
+>>>>>>> origin/master
 }

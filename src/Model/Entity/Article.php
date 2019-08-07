@@ -1,8 +1,13 @@
 <?php
+<<<<<<< HEAD
+=======
+// src/Model/Entity/Article.php
+>>>>>>> origin/master
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
 
+<<<<<<< HEAD
 /**
  * Article Entity
  *
@@ -28,5 +33,13 @@ class Article extends Entity
         'body' => true,
         'created' => true,
         'modified' => true
+=======
+class Article extends Entity
+{
+    protected $_accessible = [
+        '*' => true,
+        'id' => false,
+        'slug' => false,
+>>>>>>> origin/master
     ];
 }
